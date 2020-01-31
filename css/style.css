@@ -52,7 +52,6 @@ body {
   margin-left: 3rem; }
 
 .search {
-  background-color: lightpink;
   flex: 0 0 40%;
   display: flex;
   align-items: center;
@@ -72,6 +71,9 @@ body {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3); }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-3); }
   .search__input:focus + .search__button {
     background-color: var(--color-grey-light-3); }
   .search__button {
@@ -83,7 +85,8 @@ body {
       transform: translateY(2px); }
   .search__icon {
     height: 2rem;
-    width: 2rem; }
+    width: 2rem;
+    fill: var(--color-grey-dark-3); }
 
 .user-nav {
   background-color: lightseagreen; }
@@ -103,6 +106,7 @@ body {
 
 .header {
   height: 7rem;
+  font-size: 1.4rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
   display: flex;
