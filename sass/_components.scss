@@ -13,6 +13,10 @@
     background-color: lightpink;
     flex: 0 0 40%;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &__input {
         // Input does not automatically inherit font properties
         font-family: inherit;
@@ -25,6 +29,8 @@
         border-radius: 100px;
         width: 90%;
         transition: all .2s;
+        //  Negative margin to move button on top of the input
+        margin-right: -3.25rem;
 
         &:focus {
             // For input to grow and become darker when we click it
@@ -35,7 +41,25 @@
         }
     }
 
+    // siblings which makes the use of the adjacent selector or
+    &__input:focus + &__button {
+        //sublte but we want for the colour of the background to be the same as the input when we focus
+        background-color: var(--color-grey-light-3);
+
+    }
+
     &__button {
+        border: none;
+        background-color: var(--color-grey-light-2);
+
+        &:focus {
+            outline: none;
+        
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
 
     }
 
