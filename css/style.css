@@ -49,7 +49,7 @@ body {
 
 .logo {
   height: 3.25em;
-  margin-left: 3rem; }
+  margin-left: 2rem; }
 
 .search {
   flex: 0 0 40%;
@@ -89,7 +89,6 @@ body {
     fill: var(--color-grey-dark-3); }
 
 .user-nav {
-  background-color: #afb9b9;
   align-self: stretch;
   display: flex;
   align-items: center; }
@@ -118,10 +117,14 @@ body {
     color: #fff;
     position: absolute;
     top: 1.5rem;
-    right: 1.1rem; }
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .user-nav__user-photo {
     height: 3.75rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 1rem; }
 
 .container {
   max-width: 128rem;

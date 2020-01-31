@@ -2,7 +2,7 @@
 //// LOGO
 .logo {
     height: 3.25em;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 
@@ -79,7 +79,6 @@
 ////////////////////////
 //// USER NAVIGATION
 .user-nav {
-    background-color: rgb(175, 185, 185);
     align-self: stretch;
 
     display: flex;
@@ -121,19 +120,16 @@
         position: absolute;
         top: 1.5rem;
         right: 1.1rem;
-    }
-
-    &__user {
-    
+        
+        // Use flex to perfectly align text in notification
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     &__user-photo {
-        
         height: 3.75rem;
         border-radius: 50%;
-    }
-
-    &__user-name {
-
+        margin-right: 1rem;
     }
 }
