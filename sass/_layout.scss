@@ -9,8 +9,16 @@
 
 .header {
     height: 7rem;
+    font-size: 1.4rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
+
+    // search user-nav user-nav__icon-box user-nav__user
+    display: flex; 
+
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .content {
@@ -27,5 +35,4 @@
     background-color: var(--color-grey-dark-1);
     background-color: cadetblue;
     flex: 1;
-
 }
