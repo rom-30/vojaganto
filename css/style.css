@@ -47,6 +47,13 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+.logo {
+  height: 3.25em; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
 .container {
   max-width: 128rem;
   margin: 8rem auto;
