@@ -70,7 +70,7 @@ body {
     .search__input:focus {
       outline: none;
       width: 100%;
-      background-color: var(--color-grey-light-3); }
+      background-color: var(--color-grey-light-4); }
     .search__input::-webkit-input-placeholder {
       font-weight: 100;
       color: var(--color-grey-light-3); }
@@ -89,7 +89,19 @@ body {
     fill: var(--color-grey-dark-3); }
 
 .user-nav {
-  background-color: lightseagreen; }
+  background-color: #afb9b9;
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%; }
+  .user-nav > *:hover {
+    background-color: var(--color-grey-light-2); }
+  .user-nav__icon-box {
+    display: flex;
+    align-items: center; }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem; }

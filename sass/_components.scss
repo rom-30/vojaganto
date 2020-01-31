@@ -35,7 +35,7 @@
             // For input to grow and become darker when we click it
             outline: none;
             width: 100%;   
-            background-color: var(--color-grey-light-3);
+            background-color: var(--color-grey-light-4);
 
         }
 
@@ -79,10 +79,27 @@
 ////////////////////////
 //// USER NAVIGATION
 .user-nav {
-    background-color: lightseagreen;
+    background-color: rgb(175, 185, 185);
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+
+    // To apply style to direct children
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+        // Set height to hover the all box
+        height: 100%;
+    }
+    
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
 
     &__icon-box {
-
+        display: flex;
+        align-items: center;
     }
 
     &__icon {
