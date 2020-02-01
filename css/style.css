@@ -171,6 +171,12 @@ body {
   text-align: center;
   padding: 2.5rem; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
 .container {
   max-width: 128rem;
   margin: 8rem auto;
@@ -198,7 +204,6 @@ body {
   justify-content: space-between; }
 
 .hotel-view {
-  background-color: var(--color-grey-dark-1);
-  background-color: cadetblue;
+  background-color: #fff;
   height: 80rem;
   flex: 1; }

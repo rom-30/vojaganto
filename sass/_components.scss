@@ -210,3 +210,15 @@
     text-align: center;
     padding: 2.5rem;
 }
+
+////////////////////////
+//// GaLLERY
+
+.gallery {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
