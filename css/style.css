@@ -177,10 +177,14 @@ body {
     width: 100%;
     display: block; }
 
-.overview__icon-star, .overview__icon-location {
-  width: 1.75em;
-  height: 1.75em;
-  fill: var(--color-primary); }
+.overview {
+  display: flex; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75em;
+    height: 1.75em;
+    fill: var(--color-primary); }
 
 .container {
   max-width: 128rem;

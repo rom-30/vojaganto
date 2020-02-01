@@ -227,9 +227,19 @@
 //// OVERVIEW
 
 .overview {
+    display: flex;
     
-    &__heading {}
-    &__stars {}
+    &__heading {
+
+    }
+    
+    &__stars {
+        // using margin auto to use all space but only have th div aournd the space
+        // To check the difference uncomment backg  and flex
+        // background-color: lightseagreen;
+        // flex: 1;
+        margin-right: auto;
+    }
     
     &__icon-star,
     &__icon-location {
@@ -238,8 +248,18 @@
         fill: var(--color-primary);
     }
 
-    &__location {}
-    &__rating {}
-    &__rating-average {}
-    &__rating-count {}
+    &__location {
+    }
+
+    &__rating {
+
+    }
+
+    &__rating-average {
+
+    }
+
+    &__rating-count {
+
+    }
 }
