@@ -260,15 +260,16 @@ body {
   flex-wrap: wrap; }
   .list__item {
     flex: 0 0 50%;
-    margin-bottom: .7rem;
-    display: flex; }
+    margin-bottom: .7rem; }
   .list__item::before {
     content: "";
     display: inline-block;
-    height: 2rem;
-    width: 2rem;
+    height: 1rem;
+    width: 1rem;
     margin-right: .7rem;
-    background-image: url(../img/chevron-thin-right.svg); }
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover; }
 
 .container {
   max-width: 128rem;
