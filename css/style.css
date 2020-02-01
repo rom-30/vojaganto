@@ -255,11 +255,20 @@ body {
   margin: 3rem 0;
   padding: 3rem 0;
   border-top: var(--line);
+  border-bottom: var(--line);
   display: flex;
   flex-wrap: wrap; }
   .list__item {
     flex: 0 0 50%;
-    margin-bottom: .7rem; }
+    margin-bottom: .7rem;
+    display: flex; }
+  .list__item::before {
+    content: "";
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin-right: .7rem;
+    background-image: url(../img/chevron-thin-right.svg); }
 
 .container {
   max-width: 128rem;
