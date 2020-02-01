@@ -158,7 +158,17 @@
         height: 100%;
         width: 3px;
         background-color: var(--color-primary);
+        transform: scaleY(0);
+        transition: transform .2s,
+                    width .4s cubic-bezier(1, 0, 0, 1) .2s;
+
         // opacity: 0;
+    }
+
+    &__item:hover::before {
+        transform: scaleY(1);
+        width: 100%;
+        // color: transparent;
     }
 
     &__link:link,
