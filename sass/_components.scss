@@ -335,3 +335,17 @@
         box-shadow: none;
     }
 }
+
+////////////////////////
+//// PARAGRAPH IN HOTEL DESCRIPTION SECTION
+// last of type bcecause not last element of container
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+
+////////////////////////
+//// LIST IN HOTEL DESCRIPTION SECTION
+
+////////////////////////
+//// RCMD IN HOTEL DESCRIPTION SECTION

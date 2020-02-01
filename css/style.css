@@ -247,6 +247,9 @@ body {
     transform: scale(1);
     box-shadow: none; } }
 
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
 .container {
   max-width: 128rem;
   margin: 8rem auto;
