@@ -421,11 +421,13 @@
     padding: 3rem;
     margin-bottom: 3.5rem;
     position: relative;
+    overflow: hidden;
 
 
     &__text {
         margin-bottom: 2rem;
         z-index: 10;
+        position: relative;
     }
 
     &__user {
@@ -469,7 +471,7 @@
         // parent is &__review
         position: absolute;
         top: -2.75rem;
-        left: -1rem;
+        left: -.7rem;
         line-height: 1;
         font-size: 20rem;
         color: var(--color-grey-light-2);
