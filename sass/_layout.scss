@@ -60,4 +60,8 @@
 
 .user-reviews {
     flex: 1;
+
+    &:last-child {
+        text-align: center;
+    }
 }
