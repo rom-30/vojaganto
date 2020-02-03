@@ -427,7 +427,7 @@
     }
 
     &__friends {
-        
+        display: flex;
     }
 
     &__photo {
@@ -436,11 +436,13 @@
         height: 4rem;
         width: 4rem;
         border-radius: 50%;
-        border: 2px solid #fff;
+        border: 3px solid #fff;
 
         &:not(:last-child) {
             margin-right: -2rem;
         }
+
+        
     }
 }
 
@@ -458,7 +460,6 @@
     @media only screen and (max-width: $bp-medium) {
         padding: 2rem;
         margin-bottom: 3rem;
-
      }
 
 
@@ -521,9 +522,15 @@
 ////////////////////////
 //// CTA
 .cta {
+    background-color: #fff;
     padding: 3.5rem 0;
     text-align: center;
     justify-content: flex-end;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2.5rem 0;
+        margin-bottom: 3rem;
+     }
 
     &__book-now {
         font-size: 2rem;

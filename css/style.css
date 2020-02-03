@@ -304,12 +304,14 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
-    border: 2px solid #fff; }
+    border: 3px solid #fff; }
     .recommend__photo:not(:last-child) {
       margin-right: -2rem; }
 
@@ -363,9 +365,14 @@ body {
     z-index: 1; }
 
 .cta {
+  background-color: #fff;
   padding: 3.5rem 0;
   text-align: center;
   justify-content: flex-end; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5rem 0;
+      margin-bottom: 3rem; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
