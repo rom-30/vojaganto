@@ -19,6 +19,7 @@
     @media only screen and (max-width: $bp-smallest) {
         order: 1;
         flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
     }
 
     &__input {
@@ -36,11 +37,15 @@
         //  Negative margin to move button on top of the input
         margin-right: -3.25rem;
 
+        @media only screen and (max-width: $bp-smallest) {
+            margin-right: -2.25rem;
+        }
+
         &:focus {
             // For input to grow and become darker when we click it
             outline: none;
             width: 100%;   
-            background-color: var(--color-grey-light-4);
+            background-color: var(--color-grey-light-3);
 
         }
 
@@ -64,7 +69,6 @@
 
         &:focus {
             outline: none;
-        
         }
 
         &:active {
