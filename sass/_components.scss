@@ -160,8 +160,6 @@
         @media only screen and (max-width: $bp-medium) {
             flex: 1;
          }
-
-      
     }
 
     &__item::before {
@@ -208,6 +206,11 @@
             justify-content: center;
             padding: 2rem;
          }
+
+         @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+         }
     }
 
     &__icon {
@@ -216,6 +219,12 @@
         margin-right: 2rem;
         // To use with svg - self-explanatory -> colour or parent element
         fill: currentColor;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 1.55rem;
+            height: 1.55rem;
+            margin-right: 0;
+         }
         
     }
 }
