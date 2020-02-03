@@ -460,7 +460,7 @@ body {
   height: 7rem;
   font-size: 1.4rem;
   background-color: #fff;
-  border-bottom: vat(--line);
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center; }
