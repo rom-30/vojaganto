@@ -16,6 +16,12 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
+    }
+
     &__input {
         // Input does not automatically inherit font properties
         font-family: inherit;
@@ -31,11 +37,15 @@
         //  Negative margin to move button on top of the input
         margin-right: -3.25rem;
 
+        @media only screen and (max-width: $bp-smallest) {
+            margin-right: -2.25rem;
+        }
+
         &:focus {
             // For input to grow and become darker when we click it
             outline: none;
             width: 100%;   
-            background-color: var(--color-grey-light-4);
+            background-color: var(--color-grey-light-3);
 
         }
 
@@ -59,7 +69,6 @@
 
         &:focus {
             outline: none;
-        
         }
 
         &:active {
@@ -141,13 +150,25 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+     }
+
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+             }
         }
-      
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;
+         }
     }
 
     &__item::before {
@@ -189,6 +210,16 @@
 
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+            padding: 2rem;
+         }
+
+         @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+         }
     }
 
     &__icon {
@@ -197,6 +228,13 @@
         margin-right: 2rem;
         // To use with svg - self-explanatory -> colour or parent element
         fill: currentColor;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 1.55rem;
+            height: 1.55rem;
+            margin-right: 0;
+            margin-bottom: .7rem;
+         }
         
     }
 }
@@ -209,6 +247,10 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+     }
 }
 
 ////////////////////////
@@ -238,6 +280,11 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;         
+        }
     }
     
     &__stars {
@@ -280,6 +327,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0 1.5rem;         
+        }
     }
 
     &__rating-average {
@@ -288,11 +339,18 @@
         // To reduce space between average and count
         margin-bottom: -3px;
 
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;         
+        }
     }
 
     &__rating-count {
         font-size: .8rem;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: .5rem;         
+        }
     }
 }
 
@@ -404,7 +462,7 @@
     }
 
     &__friends {
-        
+        display: flex;
     }
 
     &__photo {
@@ -413,11 +471,13 @@
         height: 4rem;
         width: 4rem;
         border-radius: 50%;
-        border: 2px solid #fff;
+        border: 3px solid #fff;
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
+
+        
     }
 }
 
@@ -431,6 +491,11 @@
     margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
+    
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+     }
 
 
     &__text {
@@ -492,9 +557,15 @@
 ////////////////////////
 //// CTA
 .cta {
+    background-color: #fff;
     padding: 3.5rem 0;
     text-align: center;
     justify-content: flex-end;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2.5rem 0;
+        margin-bottom: 3rem;
+     }
 
     &__book-now {
         font-size: 2rem;
