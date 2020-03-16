@@ -13,7 +13,7 @@ $ git clone git@github.com:rom-30/vojaganto.git
 - [SCSS](https://sass-lang.com/) \- Stylesheet language that’s compiled to CSS
 - [Icons from IcoMoon](https://icomoon.io/app/#/select/library) \- SVG Sprite
 
-- CSS Variables
+- [CSS Variables](https://css-tricks.com/difference-between-types-of-css-variables/)
 - [BEM](https://en.bem.info/) \- Component-based approach to web development
 
 ## If you want to play with it
@@ -25,9 +25,9 @@ $ npm start
 ```scss
 /* sass/_base.scss */
 :root {
-    --color-primary:        steelblue;
-    --color-primary-light:  skyblue;
-    --color-primary-dark:   lightblue;
+  --color-primary: cornflowerblue;
+  --color-primary-light:  skyblue;
+  --color-primary-dark: lightsteelblue;
 }
 ```
 
@@ -37,7 +37,7 @@ $ npm start
 	<use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
 </svg>
 ```
-```
+```bash
 # List of SVGs in sprite /img/SVG
 ├── aircraft-take-off.svg
 ├── bookmark.svg
