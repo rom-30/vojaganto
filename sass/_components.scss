@@ -44,12 +44,12 @@
         &:focus {
             // For input to grow and become darker when we click it
             outline: none;
-            width: 100%;   
+            width: 100%;
             background-color: var(--color-grey-light-3);
 
         }
 
-        &::-webkit-input-placeholder {
+        &-input-placeholder {
             font-weight: 100;
             color: var(--color-grey-light-3);
 
@@ -102,7 +102,7 @@
         display: flex;
         align-items: center;
     }
-    
+
     & > *:hover {
         background-color: var(--color-grey-light-2);
     }
@@ -112,7 +112,7 @@
         align-items: center;
         position: relative;
     }
-    
+
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
@@ -120,22 +120,22 @@
     }
 
     &__notification {
-        font-size: .8rem;
-        height: 1.75rem;
-        width: 1.75rem;
+        font-size: .9rem;
+        height: 1.85rem;
+        width: 1.85rem;
         border-radius: 50%;
         background-color: var(--color-primary);
         color: #fff;
         position: absolute;
         top: 1.5rem;
-        right: 1.1rem;
-        
+        right: 1.2rem;
+
         // Use flex to perfectly align text in notification
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
@@ -235,7 +235,7 @@
             margin-right: 0;
             margin-bottom: .7rem;
          }
-        
+
     }
 }
 
@@ -283,10 +283,10 @@
 
         @media only screen and (max-width: $bp-small) {
             font-size: 1.8rem;
-            padding: 1.25rem 2rem;         
+            padding: 1.25rem 2rem;
         }
     }
-    
+
     &__stars {
         // using margin auto to use all space but only have th div aournd the space
         // To check the difference uncomment backg  and flex
@@ -297,7 +297,7 @@
         display: flex;
 
     }
-    
+
     &__icon-star,
     &__icon-location {
         width: 1.75em;
@@ -329,7 +329,7 @@
         justify-content: center;
 
         @media only screen and (max-width: $bp-small) {
-            padding: 0 1.5rem;         
+            padding: 0 1.5rem;
         }
     }
 
@@ -340,7 +340,7 @@
         margin-bottom: -3px;
 
         @media only screen and (max-width: $bp-small) {
-            font-size: 1.8rem;         
+            font-size: 1.8rem;
         }
     }
 
@@ -349,7 +349,7 @@
         text-transform: uppercase;
 
         @media only screen and (max-width: $bp-small) {
-            font-size: .5rem;         
+            font-size: .5rem;
         }
     }
 }
@@ -459,7 +459,7 @@
 
     display: flex;
     align-items: center;
-    
+
     &__count {
         margin-right: auto;
     }
@@ -480,7 +480,7 @@
             margin-right: -2rem;
         }
 
-        
+
     }
 }
 
@@ -494,7 +494,7 @@
     margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
-    
+
     @media only screen and (max-width: $bp-medium) {
         padding: 2rem;
         margin-bottom: 3rem;
@@ -587,8 +587,8 @@
     text-transform: uppercase;
     border-radius: 100px;
     border: none;
-    background-image: linear-gradient(to right, 
-                        var(--color-primary-light), 
+    background-image: linear-gradient(to right,
+                        var(--color-primary-light),
                         var(--color-primary-dark));
     padding: 1.5rem 3rem;
     color: #fff;
@@ -604,9 +604,9 @@
     }
 
     &__visible {
-        padding: 2rem 7.5rem;
+        padding: 1.2rem 7.5rem;
     }
-    
+
     &__hidden {
         position: absolute;
         padding: 2rem 0;
@@ -615,17 +615,17 @@
     }
 
     &:hover {
-        background-image: linear-gradient(to left, 
-        var(--color-primary-light), 
+        background-image: linear-gradient(to left,
+        var(--color-primary-light),
         var(--color-primary-dark));
     }
-    
+
     &:hover &__visible {
         transform: translateY(100%);
     }
 
     &:hover &__hidden {
-        top: 10%;
+        top: 9%;
     }
 
     &:focus {
