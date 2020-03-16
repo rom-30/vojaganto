@@ -13,6 +13,8 @@ $ git clone git@github.com:rom-30/vojaganto.git
 - [SCSS](https://sass-lang.com/) \- Stylesheet language that’s compiled to CSS
 - [Icons from IcoMoon](https://icomoon.io/app/#/select/library) \- SVG Sprite
 
+- [Favicon from gauger.io/fonticon](https://gauger.io/fonticon/)
+
 - [CSS Variables](https://css-tricks.com/difference-between-types-of-css-variables/)
 - [BEM](https://en.bem.info/) \- Component-based approach to web development
 
