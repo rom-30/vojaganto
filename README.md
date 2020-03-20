@@ -36,7 +36,7 @@ $ npm start
 ## To make good use of the sprite
 ```html
 <svg>
-	<use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+ 	<use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
 </svg>
 ```
 ```bash
@@ -52,7 +52,7 @@ $ npm start
 ├── map.svg
 └── star.svg
 ```
-##Once you're satisfied and ready to deploy
+## Once you're satisfied and ready to deploy
 ```bash
 $ npm build:css
 ```
